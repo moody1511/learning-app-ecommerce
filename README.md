@@ -66,9 +66,11 @@ mysql < db-load-script.sql
 ```
 
 5. Add Selinux permission
+
+```
 setenforce 0    =  change selinux to permissive mode
 setsebool -P httpd_can_network_connect 1
-
+```
 ## Deploy and Configure Web
 
 1. Install required packages
